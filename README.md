@@ -10,6 +10,7 @@
 2. conda install pdal -c conda-forge
 3. conda install gdal -c conda-forge
 4. conda install numpy -c conda-forge
+5. conda install laspy -c conda-forge
 
 ## Handy commands
 conda list
