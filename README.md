@@ -10,9 +10,6 @@ Install packages below so that all packages are compaible, do not install sepera
 ## Handy commands
 conda list
 
-## Update to latest version
-conda update -n base -c conda-forge conda
-
 ## Free Data
 ### Berlin LiDAR List
 https://gdi.berlin.de/geonetwork/srv/ger/catalog.search#/metadata/f4a8997d-4dea-382f-aa3a-d452f4bf3943
