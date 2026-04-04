@@ -7,12 +7,19 @@ Install packages below so that all packages are compaible, do not install sepera
 1. conda create -n lidar_env -c conda-forge python=3.10 pdal rasterio gdal numpy scipy
 2. conda activate lidar_env
 
+These are the packags that are required
+1. laspy
+2. numpy
+3. scipy
+4. rasterio
+
 ## Handy commands
 conda list
 
 To see details and if a package exists.
 1. conda list laspy
 
+Install package if missing.
 1. conda install laspy -c conda-forge
 
 
