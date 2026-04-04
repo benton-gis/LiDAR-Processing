@@ -22,6 +22,8 @@ To see details and if a package exists.
 Install package if missing.
 1. conda install laspy -c conda-forge
 
+Update everything
+1. conda update -n base -c conda-forge conda
 
 ## Free Data
 ### Berlin LiDAR List
