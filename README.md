@@ -1,9 +1,8 @@
 # LiDAR-Processing
 
 ## Create envvironment and activate
-conda create -n lidar_env
-
-conda activate lidar_env
+1. conda create -n lidar_env
+2. conda activate lidar_env
 
 ## Install packages
 
