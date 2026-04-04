@@ -1,4 +1,4 @@
-# LiDAR-Processing
+# LiDAR Processing
 
 ## Create envvironment and activate
 1. conda create -n lidar_env
