@@ -14,15 +14,20 @@ These are the packags that are required
 4. rasterio
 
 ## Handy commands
-conda list
+
+### Conda environment list
+
+conda env list
+
+### Conda list
 
 To see details and if a package exists.
 1. conda list laspy
 
-Install package if missing.
+### Install package if missing.
 1. conda install laspy -c conda-forge
 
-Update everything
+### Update everything
 1. conda update -n base -c conda-forge conda
 
 ## Free Data
