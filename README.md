@@ -36,10 +36,14 @@ Unzip aria2 into C Drive something like this C:\aria2-1.37.0-win-64bit-build1 an
 
 <pre>C:\aria2-1.37.0-win-64bit-build1\aria2c.exe -x 16 -s 16 -k 1M --continue=true "https://gdi.berlin.de/data/a_als/atom/Nordost.zip"</pre>
 
+<pre>C:\aria2-1.37.0-win-64bit-build1\aria2c.exe -x 16 -s 16 -k 1M --continue=true "https://gdi.berlin.de/data/a_als/atom/Mitte.zip"</pre>
 
 ## YAML
-conda env create -f E:\map_data\scripts\env_configs\lidar_env.yml
-<pre>C:\aria2-1.37.0-win-64bit-build1\aria2c.exe -x 16 -s 16 -k 1M --continue=true "https://gdi.berlin.de/data/a_als/atom/Mitte.zip"</pre>
+1. conda env create -f E:\map_data\scripts\env_configs\lidar_env.yml
+
+2. conda env create -f E:\map_data\scripts\env_configs\lidr_env.yml
+
+
 
 <pre>C:\aria2-1.37.0-win-64bit-build1\aria2c.exe -x 16 -s 16 -k 1M --continue=true "https://gdi.berlin.de/data/a_als/atom/Sued.zip"</pre>
 
