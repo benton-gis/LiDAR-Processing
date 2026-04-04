@@ -10,7 +10,10 @@ Install packages below so that all packages are compaible, do not install sepera
 ## Handy commands
 conda list
 
-1.conda install laspy -c conda-forge
+To see details and if a package exists.
+1. conda list laspy
+
+1. conda install laspy -c conda-forge
 
 
 ## Free Data
