@@ -11,7 +11,7 @@
 3. conda install gdal -c conda-forge
 4. conda install numpy -c conda-forge
 5. conda install laspy -c conda-forge
-6. conda install json -c conda-forge
+6. *conda install json -c conda-forge
 
 ## Handy commands
 conda list
