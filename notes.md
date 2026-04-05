@@ -14,3 +14,6 @@ The reason for this is QGIS and other applications where causing Path conflicts.
 
 conda create was stalling so co-pilot suggested using
 1. conda config --set solver libmamba
+2. conda create -n lidar_env python=3.10
+3. conda activate lidar_env
+4. conda install -c conda-forge rasterio gdal numpy scipy shapely geopandas
