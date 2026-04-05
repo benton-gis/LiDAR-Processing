@@ -30,7 +30,12 @@ The following worked on 5 April 2026
 <pre>2. C:\Program Files\PostgreSQL\17\bin</pre>
 ### Create virtual mosaic
 Use CMD and enter the following
+The following set command had to be use because of "GDAL is accidentally loading the PROJ database from PostgreSQL 17/PostGIS 3.5, which is older than the PROJ version GDAL was built against.
+This breaks CRS loading, reprojection, and anything that touches coordinate systems." - reference Copilot
 <pre>1. set PROJ_LIB=C:\Program Files\QGIS 3.40.13\share\proj</pre>
+The following set command had to be used because of "That warning is GDAL being brutally honest with you:
+your GeoTIFF contains GeoKey‑encoded CRS parameters that do not exactly match the official EPSG definition of EPSG:25833 (ETRS89 / UTM 33N).
+This is extremely common with German LiDAR because many state agencies embed slightly customised projection parameters in the TIFF header." reference Copilot
 <pre>2. set GTIFF_SRS_SOURCE=EPSG</pre>
 <pre>3. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_dtm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\DTM\*.tif</pre>
 <pre>4. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_chm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\CHM\*.tif</pre>
