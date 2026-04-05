@@ -31,7 +31,7 @@ The following worked on 5 April 2026
 ### Create virtual mosaic
 Use CMD and enter the following
 <pre>1. set PROJ_LIB=C:\Program Files\QGIS 3.40.13\share\proj</pre>
-2. set GTIFF_SRS_SOURCE=EPSG
-3. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_dtm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\DTM\*.tif
-4. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_chm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\CHM\*.tif
-5. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_dsm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\DSM\*.tif</pre>
+<pre>2. set GTIFF_SRS_SOURCE=EPSG</pre>
+<pre>3. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_dtm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\DTM\*.tif</pre>
+<pre>4. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_chm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\CHM\*.tif</pre>
+<pre>5. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_dsm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\DSM\*.tif</pre>
