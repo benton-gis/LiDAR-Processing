@@ -29,7 +29,7 @@ The following worked on 5 April 2026
 <pre>1. C:\Program Files\QGIS 3.40.13\bin</pre>
 <pre>2. C:\Program Files\PostgreSQL\17\bin</pre>
 ### Create virtual mosaic
-Use CMD and enter the following
+#### Use CMD and enter the following
 The following set command had to be use because of "GDAL is accidentally loading the PROJ database from PostgreSQL 17/PostGIS 3.5, which is older than the PROJ version GDAL was built against.
 This breaks CRS loading, reprojection, and anything that touches coordinate systems." - reference Copilot
 <pre>1. set PROJ_LIB=C:\Program Files\QGIS 3.40.13\share\proj</pre>
