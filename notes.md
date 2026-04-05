@@ -21,3 +21,18 @@ conda create was stalling so co-pilot suggested using
 5. conda install -c laspy conda-forge
 6. conda install -c conda-forge rasterio=1.4 gdal=3.8
 7. python E:\map_data\scripts\LiDAR\test_create_dtm-ver3.py
+### Actions 3
+Installation is still failing going to try the following
+#### Remove broken environment
+1. conda activate base
+2. conda env remove -n lidar_env
+#### Force conda to use conda-forge only
+4. conda config --set channel_priority strict
+5. conda config --add channels conda-forge
+#### Create a clean environment with Python 3.10
+6. conda create -n lidar_env python=3.10
+7. conda activate lidar_env
+#### Install a compatible geospatial stack
+7. conda install rasterio gdal geopandas shapely numpy scipy -c conda-forge
+#### Test Rasterio
+8. python -c "import rasterio; print(rasterio.__version__)"
