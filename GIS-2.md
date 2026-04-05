@@ -28,6 +28,8 @@ The following worked on 5 April 2026
 #### Add environment variables to GIS-1 (So QGIS and PostgreSQL function correctly)
 <pre>1. C:\Program Files\QGIS 3.40.13\bin</pre>
 <pre>2. C:\Program Files\PostgreSQL\17\bin</pre>
+### Run python script
+test_create_dtm-ver7c.py
 ### Create virtual mosaic
 #### Use CMD and enter the following
 The following set command had to be use because of "GDAL is accidentally loading the PROJ database from PostgreSQL 17/PostGIS 3.5, which is older than the PROJ version GDAL was built against.
