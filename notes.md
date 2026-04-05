@@ -5,13 +5,14 @@ Created a Win11 user named GIS-2 with no other applications installed other than
 https://github.com/conda-forge/miniforge
 
 The reason for this is QGIS and other applications where causing Path conflicts.
-### Actions
+### Actions 1 
 1. conda activate base
 2. conda env remove --name lidar_env
 3. conda create -n lidar_env -c conda-forge python=3.10 pdal rasterio gdal numpy scipy shapely geopandas laspy
-4. conda activate lidar_env
-5. python test_create_dtm-ver3.py
-
+4. The above point 3 stalled so went onto Actions 2
+5. conda activate lidar_env
+6. python test_create_dtm-ver3.py
+## Actions 2
 conda create was stalling so co-pilot suggested using
 1. conda config --set solver libmamba
 2. conda create -n lidar_env python=3.10
