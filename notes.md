@@ -33,7 +33,7 @@ Installation is still failing going to try the following
 6. conda create -n lidar_env python=3.10
 7. conda activate lidar_env
 #### Install a compatible geospatial stack
-8. conda install rasterio gdal geopandas shapely numpy scipy -c conda-forge
+8. conda install rasterio gdal geopandas shapely numpy scipy laspy -c conda-forge
 #### Test Rasterio
 9. python -c "import rasterio; print(rasterio.__version__)"
 ### Actions 4
