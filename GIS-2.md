@@ -1,7 +1,7 @@
 # GIS-2
 ## Introduction
 Some of the packages (gdal) required for LiDAR processing where clashing with QGIS and PostgreSQL installs on GIS-1. The solution was to create a Win11 user account that is only used for Python LiDAR processing.
-The following explains how to get a Python environment suitable for LiDAR processing on Win11 and avoid conflicts with QGIS and PostgreSQL
+The following explains how to install a Python environment suitable for LiDAR processing on Win11 and avoid conflicts with QGIS and PostgreSQL
 ### Instructions
 The following worked on 5 April 2026
 #### Remove broken environment
