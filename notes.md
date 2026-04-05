@@ -37,6 +37,9 @@ Installation is still failing going to try the following
 #### Test Rasterio
 9. python -c "import rasterio; print(rasterio.__version__)"
 ### Actions 4
-#### Remove from system variables
-1. Remove C:\Program Files\QGIS 3.40.13\bin.
-2. Remove C:\Program Files\PostgreSQL\17\bin
+#### Remove from system variables (Administrator Account)
+1. C:\Program Files\QGIS 3.40.13\bin.
+2. C:\Program Files\PostgreSQL\17\bin
+#### Add environment variables to GIS-1
+1. C:\Program Files\QGIS 3.40.13\bin
+2. C:\Program Files\PostgreSQL\17\bin
