@@ -1,6 +1,9 @@
 # Notes
 ## Sunday 05 April 2026
 Created a Win11 user named GIS-2 with no other applications installed other than miniforge (Miniforge3-26.1.1-2-Windows-x86_64.exe)
+
+The reason for this is QGIS and other applications where causing Path conflicts.
+### Actions
 1. conda activate base
 2. conda env remove --name lidar_env
 3. conda create -n lidar_env -c conda-forge python=3.10 pdal rasterio gdal numpy scipy shapely geopandas laspy
