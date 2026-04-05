@@ -12,7 +12,7 @@ The reason for this is QGIS and other applications where causing Path conflicts.
 4. The above point 3 stalled so went onto Actions 2
 5. conda activate lidar_env
 6. python test_create_dtm-ver3.py
-## Actions 2
+### Actions 2
 conda create was stalling so co-pilot suggested using
 1. conda config --set solver libmamba
 2. conda create -n lidar_env python=3.10
