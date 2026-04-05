@@ -12,11 +12,11 @@ It is also noted that Python 3.10 was required as some packages in this stack ar
 ### Instructions
 The following worked on 5 April 2026
 #### Remove broken environment
-1. conda activate base
-2. conda env remove -n lidar_env
+<pre>1. conda activate base</pre>
+<pre>2. conda env remove -n lidar_env</pre>
 #### Force conda to use conda-forge only
-4. conda config --set channel_priority strict
-5. conda config --add channels conda-forge
+<pre>4. conda config --set channel_priority strict</pre>
+<pre>5. conda config --add channels conda-forge</pre>
 #### Create a clean environment with Python 3.10
 6. conda create -n lidar_env python=3.10
 7. conda activate lidar_env
