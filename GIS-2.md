@@ -21,7 +21,7 @@ The following worked on 5 April 2026
 6. conda create -n lidar_env python=3.10
 7. conda activate lidar_env
 #### Install a compatible geospatial stack
-8. conda install rasterio gdal geopandas shapely numpy scipy laspy -c conda-forge
+8. conda install rasterio gdal geopandas shapely numpy scipy laspy pdal -c conda-forge
 #### Remove from system variables (Administrator Account)
 1. C:\Program Files\QGIS 3.40.13\bin.
 2. C:\Program Files\PostgreSQL\17\bin
