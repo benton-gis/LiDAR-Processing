@@ -32,6 +32,8 @@ Installation is still failing going to try the following
 #### Create a clean environment with Python 3.10
 6. conda create -n lidar_env python=3.10
 7. conda activate lidar_env
+### Actions 4
+1. Remove C:\Program Files\QGIS 3.40.13\bin from system variables.
 #### Install a compatible geospatial stack
 7. conda install rasterio gdal geopandas shapely numpy scipy -c conda-forge
 #### Test Rasterio
