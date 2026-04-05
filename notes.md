@@ -17,4 +17,7 @@ conda create was stalling so co-pilot suggested using
 1. conda config --set solver libmamba
 2. conda create -n lidar_env python=3.10
 3. conda activate lidar_env
-4. conda install -c conda-forge rasterio gdal numpy scipy shapely geopandas
+4. conda install -c conda-forge numpy scipy shapely geopandas
+5. conda install -c laspy conda-forge
+6. conda install -c conda-forge rasterio=1.4 gdal=3.8
+7. python E:\map_data\scripts\LiDAR\test_create_dtm-ver3.py
