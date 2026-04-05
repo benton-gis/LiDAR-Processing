@@ -18,19 +18,19 @@ The following worked on 5 April 2026
 <pre>4. conda config --set channel_priority strict</pre>
 <pre>5. conda config --add channels conda-forge</pre>
 #### Create a clean environment with Python 3.10
-6. conda create -n lidar_env python=3.10
-7. conda activate lidar_env
+<pre>6. conda create -n lidar_env python=3.10</pre>
+<pre>7. conda activate lidar_env</pre>
 #### Install a compatible geospatial stack
-8. conda install rasterio gdal geopandas shapely numpy scipy laspy pdal -c conda-forge
+<pre>8. conda install rasterio gdal geopandas shapely numpy scipy laspy pdal -c conda-forge</pre>
 #### Remove from system variables (Administrator Account)
-1. C:\Program Files\QGIS 3.40.13\bin.
-2. C:\Program Files\PostgreSQL\17\bin
+<pre>1. C:\Program Files\QGIS 3.40.13\bin</pre>
+<pre>2. C:\Program Files\PostgreSQL\17\bin</pre>
 #### Add environment variables to GIS-1 (So QGIS and PostgreSQL function correctly)
-1. C:\Program Files\QGIS 3.40.13\bin
-2. C:\Program Files\PostgreSQL\17\bin
+<pre>1. C:\Program Files\QGIS 3.40.13\bin</pre>
+<pre>2. C:\Program Files\PostgreSQL\17\bin</pre>
 ### Create virtual mosaic
 Use CMD and enter the following
-<pre>1. set PROJ_LIB=C:\Program Files\QGIS 3.40.13\share\proj
+<pre>1. set PROJ_LIB=C:\Program Files\QGIS 3.40.13\share\proj</pre>
 2. set GTIFF_SRS_SOURCE=EPSG
 3. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_dtm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\DTM\*.tif
 4. gdalbuildvrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\vrt_chm.vrt F:\map_data\Common\LiDAR-Germany\Berlin-Mitte\Mitte\CHM\*.tif
