@@ -49,10 +49,8 @@ Problem experienced is a clash with PDAL and RASTERIO when installing. The sugge
 <pre>1. conda config --set channel_priority strict</pre>
 <pre>2. conda config --add channels conda-forge</pre>
 #### Create a clean environment with Python 3.10
-<pre>3. conda create -n ldar_env python=3.10</pre>
-<pre>4. conda activate ldar_env</pre>
-#### Install PDAL first
-<pre>5. conda install pdal -c conda-forge</pre>
+<pre>3. conda create -n pdal_env -c conda-forge pdal python=3.10</pre>
+<pre>4. conda activate pdal_env</pre>
 #### Install a compatible geospatial stack
-<pre>6. conda install rasterio gdal geopandas shapely numpy scipy laspy -c conda-forge</pre>
+<pre>5. conda install -n pdal_env -c conda-forge rasterio numpy scipy laspy</pre>
 
