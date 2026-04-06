@@ -55,4 +55,18 @@ Problem experienced is a clash with PDAL and RASTERIO when installing. The sugge
 <pre>5. conda install -n pdal_env -c conda-forge rasterio numpy scipy laspy</pre>
 #### Install other required packages
 <pre>6. conda install tqdm -c conda-forge</pre>
+#### Create virtual mosaic
+<pre>
+set PROJ_LIB=C:\Program Files\QGIS 3.40.13\share\proj
+set GTIFF_SRS_SOURCE=EPSG
+  
+gdalbuildvrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\vrt_chm.vrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\CHM\*.tif
+gdalbuildvrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\vrt_dsm.vrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\DSM\*.tif
+gdalbuildvrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\vrt_dtm.vrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\DTM\*.tif
+
+gdalbuildvrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\vrt_chm.vrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_2\CHM\*.tif
+gdalbuildvrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\vrt_dsm.vrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_2\DSM\*.tif
+gdalbuildvrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_1\vrt_dtm.vrt E:\map_data\common\LiDAR-Germany\Berlin-Nordost\Output_from_2\DTM\*.tif
+
+</pre>
 
