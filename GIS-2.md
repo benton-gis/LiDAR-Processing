@@ -46,11 +46,13 @@ This is extremely common with German LiDAR because many state agencies embed sli
 ## Introduction
 Problem experienced is a clash with PDAL and RASTERIO when installing. The suggestion is to install PDAL first and then all other packages.
 #### Force conda to use conda-forge only
-<pre>4. conda config --set channel_priority strict</pre>
-<pre>5. conda config --add channels conda-forge</pre>
+<pre>1. conda config --set channel_priority strict</pre>
+<pre>2. conda config --add channels conda-forge</pre>
 #### Create a clean environment with Python 3.10
-<pre>6. conda create -n ldar_env python=3.10</pre>
-<pre>7. conda activate ldar_env</pre>
+<pre>3. conda create -n ldar_env python=3.10</pre>
+<pre>4. conda activate ldar_env</pre>
+#### Install PDAL first
+<pre>5. conda install pdal -c conda-forge</pre>
 #### Install a compatible geospatial stack
-<pre>8. conda install rasterio gdal geopandas shapely numpy scipy laspy pdal -c conda-forge</pre>
+<pre>6. conda install rasterio gdal geopandas shapely numpy scipy laspy -c conda-forge</pre>
 
