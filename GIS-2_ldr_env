@@ -1,1 +1,4 @@
+# LiDAR Processing
+## ldr_env instructions
+Problem experienced is a clash with PDAL and RASTERIO when installing. The suggestion is to install PDAL first and then all other packages.
 
