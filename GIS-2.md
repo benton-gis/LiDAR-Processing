@@ -53,4 +53,6 @@ Problem experienced is a clash with PDAL and RASTERIO when installing. The sugge
 <pre>4. conda activate pdal_env</pre>
 #### Install a compatible geospatial stack
 <pre>5. conda install -n pdal_env -c conda-forge rasterio numpy scipy laspy</pre>
+#### Install other required packages
+<pre>6. conda install tqdm -c conda-forge</pre>
 
