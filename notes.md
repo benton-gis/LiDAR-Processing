@@ -3,7 +3,7 @@
 ### Setup Win11 Users
 1. Admin
 2. GIS-1 (Environment for QGIS, PostgreSQL and Python)
-3. GIS-2 (Python environment to process LiDAR, No QGIS or PostgreSQL)
+3. GIS-2 (Python environment to process LiDAR, No QGIS or PostgreSQL to avoid polluted Paths)
 ## Sunday 05 April 2026
 Created a Win11 user named GIS-2 with no other applications installed other than miniforge (Miniforge3-26.1.1-2-Windows-x86_64.exe)
 
