@@ -1,39 +1,7 @@
 # LiDAR Processing
-
-## Create envvironment and activate
-
-Install packages below so that all packages are compaible, do not install seperately.
-
-1. conda create -n lidar_env -c conda-forge python=3.10 pdal rasterio gdal numpy scipy
-2. conda activate lidar_env
-
-These are the packags that are required
-1. laspy
-2. numpy
-3. scipy
-4. rasterio
-
-## Handy commands
-
-### Conda environment list
-
-conda env list
-
-### Conda list
-
-To see details and if a package exists.
-1. conda list laspy
-
-### Install package if missing.
-1. conda install laspy -c conda-forge
-
-### Update everything
-1. conda update -n base -c conda-forge conda
-
 ## Free Data
 ### Berlin LiDAR List
 https://gdi.berlin.de/geonetwork/srv/ger/catalog.search#/metadata/f4a8997d-4dea-382f-aa3a-d452f4bf3943
-
 ## Useful tools
 The Berlin LiDAR portal times out after several minutes. Use [aria2](https://aria2.github.io) for a more positive download experience
 
@@ -44,8 +12,6 @@ Unzip aria2 into C Drive something like this C:\aria2-1.37.0-win-64bit-build1 an
 <pre>C:\aria2-1.37.0-win-64bit-build1\aria2c.exe -x 16 -s 16 -k 1M --continue=true "https://gdi.berlin.de/data/a_als/atom/Mitte.zip"</pre>
 
 <pre>C:\aria2-1.37.0-win-64bit-build1\aria2c.exe -x 16 -s 16 -k 1M --continue=true "https://gdi.berlin.de/data/a_als/atom/Sued.zip"</pre>
-
-
 ## YAML
 1. conda env create -f E:\map_data\scripts\env_configs\lidar_env.yml
 
